@@ -1,0 +1,104 @@
+$bg-gradient:linear-gradient(to bottom, #1c3a66,#081c3a, #061630);
+$muted:rgba(187, 187, 187, 0.747);
+$light-font:rgb(249, 249, 249);
+$dark-font:#092146;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+.info{
+    background-image: $bg-gradient;
+    height: 99%;
+    width: 38%;
+    color:$light-font ;
+    padding: 60px 48px;
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.014);
+    }
+    h2{
+        font-size: 38px;
+        margin-bottom: 56px;
+        font-weight: 200;
+    }
+    label{
+        color: $muted;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+}
+.footer{
+    position: absolute;
+    bottom: 28px;
+    font-size: 24px;
+    i{
+        padding: 0 8px;
+        cursor: pointer;
+    }
+}
+.contact-us{
+    height: 96%;
+    width: 62%;
+    color:$dark-font;
+    padding: 62px 100px;
+    background-color: $light-font;
+    form{  
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 38px;
+        font-weight: 200;
+        border-bottom: 2px solid $muted;
+    }
+    label{
+        margin-top: 28px;
+    }
+    input{
+        line-height: 28px;
+        padding: 4px;
+        margin-top:12px;
+        border-color: $muted;
+        border-radius: 4px;
+        outline: none;
+        font-size:20px;
+        margin: 4px 0;
+    }
+    textarea{
+        margin-top:12px 0 28px;
+        border-radius: 4px;
+        outline: none;
+        font-size:20px;
+    }
+    button{
+        background-color: $dark-font;
+        color: $light-font;
+        border-radius: 4px;
+        font-size: 20px;
+        font-weight: 100;
+        padding: 12px 0;
+        margin-top: 60px;
+        &:hover{
+            background-color: darken($dark-font, 10%); 
+            cursor:pointer;
+        }
+    }
+}
